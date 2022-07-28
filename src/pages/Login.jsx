@@ -23,7 +23,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
-  background-color: white;
+  background-color: silver;
   ${mobile({ width: "75%" })}
 `;
 
@@ -53,7 +53,7 @@ const Button = styled.button`
   cursor: pointer;
   margin-bottom: 10px;
   &:disabled{
-    color: green;
+    color: white;
     cursor: not-allowed;
   }
 `;
@@ -90,7 +90,7 @@ const Login = () => {
           <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
           { error && <Error>Something went wrong...</Error>}
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <Link >CREATE A NEW ACCOUNT</Link>
         </Form>
       </Wrapper>
     </Container>

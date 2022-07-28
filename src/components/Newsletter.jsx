@@ -26,7 +26,7 @@ const Desc = styled.div`
 const InputContainer = styled.div`
   width: 50%;
   height: 40px;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
@@ -42,15 +42,15 @@ const Input = styled.input`
 const Button = styled.button`
   flex: 1;
   border: none;
-  background-color: teal;
-  color: white;
+  background-color: red;
+  color: black;
 `;
 
 const Newsletter = () => {
   return (
     <Container>
       <Title>Newsletter</Title>
-      <Desc>Get timely updates from your favorite products.</Desc>
+      <Desc>Get timely updates from your favorite foodstuff.</Desc>
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>

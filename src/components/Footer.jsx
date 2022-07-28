@@ -37,7 +37,7 @@ const SocialIcon = styled.div`
   height: 40px;
   border-radius: 50%;
   color: white;
-  background-color: #${(props) => props.color};
+  background-color: #${(props) => props.color};*
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8" })}
+  ${mobile({ backgroundColor: "#FFA500" })}
 
 `;
 
@@ -88,11 +88,9 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>NUTRITION DEPOT</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          We sale the best and fresh type of foods you can get across the country , our service is tested and trusted with testimonies , we don't delay delivery and we make sure you get your orders as soon as possible
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -114,9 +112,9 @@ const Footer = () => {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
+          <ListItem>Organic Food</ListItem>
+          <ListItem>Inorganic Food</ListItem>
+          <ListItem>Low Cholestrol Food</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
           <ListItem>Wishlist</ListItem>
@@ -127,13 +125,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+          <Room style={{marginRight:"10px"}}/> Erelu close jankara market , Agbado Ijaye , Lagos Nigeria
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
+          <Phone style={{marginRight:"10px"}}/> +234 91 351 754 30
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> contact@idrisrasheed2000@gmail.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

@@ -187,11 +187,11 @@ const Cart = () => {
       <Navbar /> 
       <Announcement />
       <Wrapper>
-        <Title>YOUR BAG</Title>
+        <Title>YOUR CART</Title>
         <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>
           <TopTexts>
-            <TopText>Shopping Bag(2)</TopText>
+            <TopText>Shopping CART(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
           <TopButton type="filled">CHECKOUT NOW</TopButton>
@@ -209,7 +209,7 @@ const Cart = () => {
                   <ProductId>
                     <b>ID:</b> {product.id}
                   </ProductId>
-                  <ProductColor color={product.color} />
+                 <ProductColor color={product.color} />
                   <ProductSize>
                     <b>Size:</b> {product.size}
                   </ProductSize>
@@ -246,7 +246,7 @@ const Cart = () => {
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
           <StripeCheckout
-          name="Lama Shop"
+          name="Nutrition Depot"
           image="https://avatars.githubusercontent.com/u/1486366?v=4"
           billingAddress
           shippingAddress
