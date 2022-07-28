@@ -88,15 +88,6 @@ const ProductName = styled.span``;
 
 const ProductId = styled.span``;
 
-const ProductColor = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-`;
-
-const ProductSize = styled.span``;
-
 const PriceDetail = styled.div`
   flex: 1;
   display: flex;
@@ -209,10 +200,6 @@ const Cart = () => {
                   <ProductId>
                     <b>ID:</b> {product.id}
                   </ProductId>
-                 <ProductColor color={product.color} />
-                  <ProductSize>
-                    <b>Size:</b> {product.size}
-                  </ProductSize>
                 </Details>
               </ProductDetail>
               <PriceDetail>
