@@ -1,4 +1,4 @@
-import { Add, Remove } from "@material-ui/icons";
+// import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -30,16 +30,6 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-`;
-
-const TopButton = styled.button`
-  padding: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
-  color: ${(props) => props.type === "filled" && "white"};
 `;
 
 const TopTexts = styled.div`
@@ -180,12 +170,10 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR CART</Title>
         <Top>
-          <TopButton>CONTINUE SHOPPING</TopButton>
           <TopTexts>
             <TopText>Shopping CART(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
-          <TopButton type="filled">CHECKOUT NOW</TopButton>
         </Top>
         <Bottom>
           <Info>
@@ -204,11 +192,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
                   <ProductAmount>{product.quantity}</ProductAmount>
-                  <Remove /> 
                 </ProductAmountContainer>
-                <ProductPrice>$ {product.price*product.quantity}</ProductPrice>
+                <ProductPrice># {product.price*product.quantity}</ProductPrice>
               </PriceDetail>
             </Product>
              ))}
@@ -218,26 +204,26 @@ const Cart = () => {
             <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice># {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
-              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+              <SummaryItemPrice># 5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+              <SummaryItemPrice># -5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice># {cart.total}</SummaryItemPrice>
             </SummaryItem>
           <StripeCheckout
           name="Nutrition Depot"
           image="https://avatars.githubusercontent.com/u/1486366?v=4"
           billingAddress
           shippingAddress
-          description={`Your total is $${cart.total}`}
+          description={`Your total is ##{cart.total}`}
           amount={cart.total*100}
           token={onToken}
           stripeKey={KEY}

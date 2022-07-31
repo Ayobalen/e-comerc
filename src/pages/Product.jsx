@@ -124,6 +124,7 @@ const handleQuantity = (type) =>{
 const handleClick = ()=>{ 
 dispatch(addProduct({ ...product, quantity }));
 };
+
   return (
     <Container>
       <Navbar />
@@ -137,7 +138,7 @@ dispatch(addProduct({ ...product, quantity }));
           <Desc>
            {product.desc}
           </Desc>
-          <Price>$ {product.price}</Price>
+          <Price># {product.price}</Price>
           <FilterContainer>
           </FilterContainer>
           <AddContainer>
